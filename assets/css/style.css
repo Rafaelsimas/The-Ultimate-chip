@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+    color: inherit;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+
+/* =========================MENU==================== */
+.topo{
+    width: 90%;
+   max-width: 700px; 
+   background-color: rgba(0, 0, 0, 0.596);
+   height: 90px;
+   margin-top: 110px;
+   margin-inline: auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+}
+
+.topo img{
+    width: 140px;
+}
+
+.topo p{
+    color: white;
+    padding: 8px;
+}
+.topo button{
+    width: 140px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+}
+    /* =========================JOGO==================== */
+
+.jogo{
+    background-color: #d4d3d3;
+    width: 90%;
+    max-width: 700px; 
+    margin-inline: auto;
+    margin-top: 73px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.titulo{
+    font-size: 30px;
+    padding: 8px;
+}
+
+.jogo button{
+    width: 30%;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 5px;
+    border: none;
+}
+
+.jogo button.selecionado{
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+
+.jogo .btn-iniciar{
+    width: 90%;
+    background-color: green;
+    color: white;
+}
+/* =======================resumo=============== */
+
+.escondido{
+    display: none;
+}
+
+.aviso.perigo{
+    color: red;
+    font-weight: bold;
+}
+
+.resumo{
+    background-color: #d4d3d3;
+    width: 90%;
+    max-width: 700px;
+    margin-inline: auto;
+    padding: 50px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 73px;
+    text-align: center;
+}
+
+.resultado{
+    background-color: green;
+    margin-bottom: 30px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+   
+}
+
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid green; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin-inline: auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  @media (max-width:600px) {
+    .topo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 90px;
+        padding: 30px;
+        margin-top: 45px;
+    }
+
+    .topo img{
+        width: 80px;
+    }
+
+    .topo p{
+      padding: 10px;
+    }
+
+    .topo button{
+      width: 90%;
+    }
+
+    .jogo button{
+        width: 90%;
+        padding: 15px;
+        border-radius: 8px;
+        margin: 5px;
+        border: none;
+    }
+  }

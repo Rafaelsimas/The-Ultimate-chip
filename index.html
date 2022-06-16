@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>The ultimate chip </title>
+</head>
+<body>
+    <div class="login-topo">
+        <div class="topo">
+            <img src="./assets/img/ficha.png" alt="">
+            <p class="aviso">The ULTIMATE CHIP é um jogo exclusivo para maiores de idade</p>
+            <button onclick="login()">Entar</button>
+        </div>
+    </div>
+    <div class="jogo escondido">
+        <div class="selecionar-jogo">
+            <div class="secao tipo-jogo">
+                <div class="titulo">Tipo de jogo</div>
+                <button class="texas" onclick="selecionarJogo('.texas', 'Texas Holden')">Texas Hold'en</button>
+                <button class="omaha" onclick="selecionarJogo('.omaha', 'Omaha High')">Omaha high</button>
+                <button class="five" onclick="selecionarJogo('.five', 'Five Card Draw')">Five Card Draw</button>
+            </div>
+        </div>
+
+        <div class="selecionar-jogo">
+            <div class="secao qtd-jogadores">
+                <div class="titulo">Selecionar jogadores</div>
+                <button class="jogadores5" onclick="selecionarJogadores('.jogadores5', 5)">5</button>
+                <button class="jogadores9" onclick="selecionarJogadores('.jogadores9', 9)">9</button>
+            </div>
+        </div>
+
+        <div class="iniciar-jogo">
+            <div class="titulo">Iniciar jogo</div>
+           <button class="btn-iniciar" onclick="continuar()">Continuar</button>
+        </div>
+    </div>
+
+    <div class="resumo escondido">
+        <div class="carregando-jogo">
+            
+        </div>
+        <div class="loader"></div>
+        Carregando...
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
